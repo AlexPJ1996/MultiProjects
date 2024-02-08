@@ -1,0 +1,20 @@
+﻿-- Base de datos del monedero
+CREATE DATABASE [DB.s3db]
+
+-- Tabla para egresos
+CREATE TABLE [Egre] (
+[Cant] NUMERIC NOT NULL,
+[Razo] VARCHAR(250) NULL,
+[Fech] VARCHAR(10) NOT NULL,
+[Hora] VARCHAR(13) NOT NULL,
+[Iden] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL
+);
+ 
+-- Tabla para ingresos
+CREATE TABLE [Ingr] (
+[Cant] NUMERIC NOT NULL,
+[Razo] VARCHAR(250) NULL,
+[Fech] VARCHAR(10) NOT NULL,
+[Hora] VARCHAR(13) NOT NULL,
+[Iden] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL
+);
